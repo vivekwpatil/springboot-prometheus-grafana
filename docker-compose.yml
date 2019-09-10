@@ -1,0 +1,31 @@
+version: "3.3"
+services:
+  spring-boot-service1:
+    image: spring-boot
+    ports:
+      - "8085:8085"
+  spring-boot-service2:
+    image: spring-boot
+    ports:
+      - "8086:8085"
+  spring-boot-service3:
+    image: spring-boot
+    ports:
+      - "8087:8085"
+  spring-boot-service4:
+    image: spring-boot
+    ports:
+      - "8088:8085"
+  prometheus:
+    image: prometheus-local
+    ports:
+      - "9090:9090"
+  grafana:
+    image: grafana/grafana
+    user: "104"
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+
+
