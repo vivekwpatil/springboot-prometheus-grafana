@@ -28,6 +28,8 @@ docker-compose up
 http://192.168.99.100:9090/targets
 ####Grafana URL:
 http://192.168.99.100:3000 
+#####-pre configured dashboard
+http://192.168.99.100:3000/d/VU7ndCzWk/prometeus-local-stats?orgId=1&from=now-5m&to=now
 #####I am using Docker Toolbox locally to run this application in windows.
 Reference:
 https://docs.docker.com/toolbox/toolbox_install_windows/
