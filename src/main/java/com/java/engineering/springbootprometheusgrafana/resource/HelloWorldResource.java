@@ -26,12 +26,9 @@ public class HelloWorldResource {
                 LOG.info("*****************hello is called in case of 400 Bad Request*******************");
                 return ResponseEntity.badRequest().body("bad request");
             case "2":
-                LOG.info("*****************hello is called in case of 401 unauthorized*******************");
-                return ResponseEntity.status(401).body("forbidden");
+                LOG.info("*****************hello is called in case of 503 Service Unavailable*******************");
+                return ResponseEntity.status(503).body("Service Unavailable");
             case "3":
-                LOG.info("*****************hello is called in case of 403 forbidden*******************");
-                return ResponseEntity.status(403).body("forbidden");
-            case "4":
                 LOG.info("*****************hello is called in case of internal Server error *******************");
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("internal Server error");
             default:
