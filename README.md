@@ -1,5 +1,5 @@
 # Spring Boot 2 + Prometheus + Grafana with  docker-compose
-[![Build Status](https://travis-ci.org/vivekwpatil/springboot-prometheus-grafana?branch=master)](https://travis-ci.org/vivekwpatil/springboot-prometheus-grafana)
+[![Build Status](https://travis-ci.org/vivekwpatil/springboot-prometheus-grafana)](https://travis-ci.org/vivekwpatil/springboot-prometheus-grafana)
 
 ###How to build and run Application:
 
