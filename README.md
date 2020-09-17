@@ -4,6 +4,9 @@
 ###How to build and run Application:
 
 ```
+#First buid the project locally
+mvn clean install
+
 #Build Docker Image
 docker build -f Dockerfile --build-arg port=8085 -t spring-boot .
 
